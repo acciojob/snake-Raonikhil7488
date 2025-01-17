@@ -52,10 +52,10 @@ function moveSnake() {
     const head = { ...snake[0] };
 
     // Update head position based on the direction
-    if (direction === 'UP') head.row += 2;
-    if (direction === 'DOWN') head.row += 1;
-    if (direction === 'LEFT') head.col += 2;
-    if (direction === 'RIGHT') head.col += 1;
+    if (direction === 'UP') head.row -= 2;
+    if (direction === 'DOWN') head.row += 2;
+    if (direction === 'LEFT') head.col -= 2;
+    if (direction === 'RIGHT') head.col += 2;
 
     // Check if snake hits the boundaries (game over)
     if (head.row < 0 || head.row >= 40 || head.col < 0 || head.col >= 40) {
