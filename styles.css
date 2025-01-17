@@ -1,2 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* Your CSS Code here. */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.scoreBoard {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+#gameContainer {
+    display: grid;
+    grid-template-columns: repeat(40, 10px);  /* 40 columns of 10px each */
+    grid-template-rows: repeat(40, 10px);     /* 40 rows of 10px each */
+    width: 400px;
+    height: 400px;
+    position: relative;
+    border: 2px solid black;
+}
+
+.pixel {
+    width: 10px;
+    height: 10px;
+    background-color: #e9e9e9;
+    border: 1px solid #ddd;
+}
+
+.food {
+    background-color: red;  /* Color for food */
+}
+
+.snakeBodyPixel {
+    background-color: green;  /* Color for snake body */
+}
